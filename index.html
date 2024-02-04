@@ -1,0 +1,169 @@
+<html>
+    <title>MHW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <body bgcolor="black">
+        <div class="w3-container w3-center">
+            <img src="Banner MH.jpg" style="width: 100%">
+        </div>
+        <div class="w3-bar w3-gray">
+            <button class="w3-bar-item w3-button" onclick="openWeapon('home')">Home</button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('assault')">Zinogre</button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('smg')">Deviljho</button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('sniper')">Nergigante</button>
+            <button class="w3-bar-item w3-button" onclick="openWeapon('shotgun')">Glavenus</button>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">More</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-2">
+                    <button class="w3-bar-item w3-button" onclick="openWeapon('knife')">Great Sword</button>
+                    <button class="w3-bar-item w3-button" onclick="openWeapon('Bomb')">Long Sword</button>
+                    <button class="w3-bar-item w3-button" onclick="openWeapon('handgun')">Charge Blade</button>
+                </div>
+            </div>
+            <button class="w3-bar-item w3-button w3-right" onclick="openWeapon('profile')">My Profile</button>
+        </div>
+        <center>
+            <div id="home" class="w3-container w3-animate-fading Weapon" style="display:block">
+                <br>
+                <h1 class="w3-text-white">WELCOME</h1>
+                <p class="w3-text-white">Have Fun :)</p>
+            </div>
+            <div id="profile" class="w3-container w3-animate-top Weapon" style="display:none">
+                <h1 class="w3-text-white">My Profile</h1>
+                <img src="profil.jpeg" style="width: 15%">
+                <p class="w3-text-white">
+                    Nama :	Yosep Sinyo Kubeng Keranz<br>
+                    NIM :	10123251<br>Kelas :	IF-6
+                </p>
+            </div>
+            <div id="assault" class="w3-container w3-animate-zoom Weapon" style="display:none">
+                <h1 class="w3-text-white">Zinogre</h1>
+                <img src="Zinogre.jpg">
+                <p class="w3-text-white">Zinogre adalah monster berkaki empat dengan ciri-ciri lupin yang dangkal. 
+				Ia memiliki anggota badan yang sangat berkembang, taring dan cakar yang tajam. Kaki depannya sangat kuat dan dapat membunuh mangsanya dalam satu pukulan brutal. 
+				Meskipun ukurannya sangat besar, Zinogre sangat lincah dan mampu melakukan banyak manuver mengesankan di udara dan darat. 
+				Paku-paku di tubuhnya sebagian besar terletak rata, tetapi ketika sudah menghasilkan muatan listrik, paku-paku itu menonjol secara vertikal ke udara.</p>
+            </div>
+            <div id="smg" class="w3-container w3-animate-bottom Weapon" style="display:none">
+                <h1 class="w3-text-white">Deviljho</h1>
+                <img src="Deviljho.jpg">
+                <p class="w3-text-white">Deviljho adalah Brute Wyvern bipedal yang sangat besar, ditandai dengan warna hijau hutan yang seragam dan tubuh bagian atas yang berotot. 
+				Kulitnya yang tebal dipenuhi duri pendek bergerigi yang mencapai ketinggian maksimal di sepanjang punggung dan ekor. 
+				Deviljho memiliki moncong sempit dengan rahang bawah yang besar, ditutupi beberapa baris gigi yang menyebar keluar dari mulut. 
+				Ia mempunyai kaki belakang yang besar dan kuat, namun kaki depannya kecil dan kurang berkembang sehingga jarang digunakan. 
+				Saat marah, otot punggung dan bahu Deviljho membengkak sehingga memperlihatkan bekas luka. 
+				Selama periode ini, area kulitnya akan berubah warna menjadi merah cerah.</p>
+            </div>
+            <div id="sniper" class="w3-container Animasi w3-animate-right Weapon" style="display:none">
+                <h1 class="w3-text-white">Nergigante</h1>
+                <img src="Nergigante.jpg">
+                <p class="w3-text-white">Nergigante adalah seekor naga dengan penampilan berbulu. Itu ditutupi paku-paku yang terus tumbuh kembali saat dipatahkan. Ia memiliki dua tanduk besar yang mirip dengan banteng. 
+				Kulit monster itu sebagian besar berwarna hitam dengan aksen ungu dan oranye. 
+				Nergigante terus-menerus meregenerasi kulitnya saat menyerang dan diserang oleh pemburu. 
+				Perlahan-lahan akan tumbuh duri putih di bagian tubuh tertentu, yang lama kelamaan akan mengeras. Pemburu harus mencoba mematahkan paku putih tersebut sebelum mengeras. Setelah mengeras, serangannya menghasilkan lebih banyak kerusakan. Paku ini berwarna putih ketika tumbuh kembali, namun akan berubah menjadi hitam jika dibiarkan mengeras. Setelah paku ini mengeras, mereka akan menimbulkan lebih banyak kerusakan pada musuh dan menangkis serangan.
+		</p>
+		<p class="w3-text-white">
+				Paku-paku ini juga akan diluncurkan dari tubuh Nergigante ketika ia melakukan serangan tertentu, 
+				memberikan jangkauan serangan yang lebih luas dan membuatnya lebih berbahaya. Selain itu, 
+				paku yang mengeras memerlukan ketajaman yang lebih tinggi pada senjata jarak dekat dari biasanya untuk mencegahnya memantul. 
+				Ketika semua bagian tubuh yang mungkin telah mengeras paku, Nergigante akan melakukan serangan khusus. 
+				Ia akan melayang sebentar di udara, sebelum jatuh. Ini akan mematahkan duri di seluruh bagian tubuh.
+		</p>
+		<p class="w3-text-white">
+				Tanduk, tungkai depan, sayap, dan ekor Nergigante bisa patah. 
+				Ekornya juga bisa dipotong. Mematahkan paku Nergigante tidak akan memberikan hadiah sebagian istirahat. 
+				Satu-satunya hadiah yang bisa menghancurkannya adalah dengan mematahkan tanduknya. 
+				Mematahkan paku Nergigante akan memudahkan untuk mematahkan bagian-bagiannya</div>
+            <div id="shotgun" class="w3-container Animasi w3-animate-left Weapon" style="display:none">
+                <h1 class="w3-text-white">Glavenus</h1>
+                <img src="Glavenus.jpg">
+                <p class="w3-text-white">Setiap Glavenus adalah laki-laki karena perempuan tidak terlihat. Glavenus adalah Brute Wyvern berukuran besar dengan sisik merah tua menutupi tubuhnya. 
+				Dua baris pelat tulang berwarna biru membentang di sepanjang punggungnya, mulai dari mata hingga ekor. Bagian bawahnya lebih berwarna krem. 
+				Ciri unik Glavenus adalah ekornya yang besar seperti pedang. Ekornya awalnya memiliki warna yang sama dengan pelat punggungnya, meskipun warnanya akan berubah menjadi berkarat atau merah menyala selama pertempuran. 
+				Kaki belakangnya kuat dan berotot, sedangkan lengannya jauh lebih kecil dan sebagian besar tidak berguna dalam pertarungan. 
+				Wajah dan rahangnya dilapisi lapisan kokoh, terutama menyerupai kepala Carnotaurus, meskipun lengan dan proporsinya meniru Tyrannosaurus.</p>
+            </div>
+            <div id="knife" class="w3-container Animasi w3-animate-top Weapon" style="display:none">
+                <h1 class="w3-text-white">Great Sword</h1>
+                <img src="gs.png">
+                <p class="w3-text-white">Senjata yang lambat dan berat dengan potensi kerusakan besar, Greatsword adalah artileri berat senjata jarak dekat. Meskipun sederhana pada awalnya, Greatsword membutuhkan pengaturan waktu dan jarak yang terampil untuk mendapatkan hasil maksimal. Saat menyerang, Pedang Besar menyerang dengan ayunan lambat dan berat yang menghasilkan kerusakan tinggi dan terhuyung-huyung.
+				</p>
+				<p class="w3-text-white">
+			Charged Attack
+				</p>
+				<p class="w3-text-white">
+			Kekuatan sebenarnya dari Greatsword terletak pada serangannya yang bermuatan. Anda dapat merangkai Tebasan Berisi hingga tiga kali untuk pukulan akhir yang kuat, Tebasan Berisi Sejati.
+				</p>
+				<p class="w3-text-white">
+			Tackle
+				</p>
+				<p class="w3-text-white">
+			Great Sword dapat mengimbangi mobilitasnya yang lambat dengan kemampuan bertahannya. Tackle memungkinkan senjata untuk melakukan hyperarmor melalui serangan apa pun sambil mempertahankan tingkat muatan untuk kombo Charged Slash Anda.</p>
+				</p>
+		   </div>
+            <div id="Bomb" class="w3-container w3-animate-zoom Weapon" style="display:none">
+                <h1 class="w3-text-white">Long Sword</h1>
+                <img src="ls.png">
+                <p class="w3-text-white">Senjata yang elegan, Pedang Panjang adalah senjata yang lengkap. Serangannya relatif cepat, menghasilkan damage yang lumayan, dan memiliki jangkauan yang baik. Pemburu dapat menggunakan sebagian besar kombo Pedang Panjang, menjadikannya senjata yang sangat mobile. Selain kumpulan gerakan dasar yang kokoh, ia memiliki sistem Pengukur Roh yang unik. Setiap serangan non-Spirit dari Long Sword mengisi Spirit Gauge sedikit. Gauge akan meluruh seiring berjalannya waktu, namun mengisinya sepenuhnya akan menguncinya untuk sementara waktu, mencegah pembusukan. Gauge ini dapat digunakan untuk Serangan Roh. Serangan Roh menimbulkan kerusakan ekstra, tidak akan memantul dari kulit monster, menaikkan Pengukur Roh satu tingkat setelah menyelesaikan kombo penuh. Level nol adalah level awal, level satu akan memiliki cahaya putih pada Pengukur Roh dan Pedang Panjang itu sendiri, level dua akan memiliki cahaya kuning, dan level tiga berwarna merah. Setiap level meningkatkan kekuatan serangan Pedang Panjang dalam jumlah yang cukup besar. Jika kamu tidak melakukan kombo Spirit Attack, maka cahaya di sekitar Spirit Gauge akan berkurang dan jika hilang maka levelnya akan turun satu. Semakin tinggi levelnya, semakin cepat cahaya Gauge akan habis. Menjaga Spirit Gauge di level tiga adalah hal terpenting untuk menggunakan Pedang Panjang secara efektif.
+				</p>
+				<p class="w3-text-white">
+				Spirit Roundslash
+				</p>
+				<p class="w3-text-white">
+				Mendaratkan Spirit Roundslash pada monster akan meningkatkan Spirit Gauge Anda sebanyak satu level, meningkatkan kekuatan serangan Anda. Serangan Anda dapat ditingkatkan hingga tiga level.
+				</p>
+				<p class="w3-text-white">
+				Spirit Thrust
+				</p>
+				<p class="w3-text-white">
+				Serangan berkekuatan tinggi yang menghabiskan satu level Spirit Gauge untuk dieksekusi. Ini memberikan kerusakan paling besar ketika Spirit Gauge berwarna merah.
+				</p>
+				<p class="w3-text-white">
+				Foresight Slash
+				</p>
+				<p class="w3-text-white">
+				Foresight Slash memungkinkan Anda menghindari serangan musuh dan langsung melancarkan serangan balik. Itu juga bisa dirantai menjadi Pedang Roh.</p>
+				</p>
+			</div>
+            <div id="handgun" class="w3-container w3-animate-bottom Weapon" style="display:none">
+                <h1 class="w3-text-white">Charge Blade</h1>
+                <img src="cb.jpg">
+                <p class="w3-text-white">Senjata jarak dekat paling rumit dalam game, Charge Blade memiliki dua bentuk dan sistem phial. Bentuk Pedang & Perisai adalah bentuk default dan memiliki perpaduan yang bagus antara mobilitas, pertahanan, dan serangan. Kombonya berputar bergantian antara serangan cepat dan menyerang dengan pedang dengan sesekali tusukan perisai. Tujuan utama dari bentuk pedang & perisai adalah untuk membangun muatan dengan memukul monster, dan kemudian menyimpan muatan tersebut ke dalam botol. Botol tersebut kemudian digunakan dalam bentuk kapak. Bentuk kapak memiliki damage yang tinggi dan jangkauan yang mengesankan, namun kekuatan sebenarnya berasal dari serangan Element Discharge-nya. Serangan Pelepasan Elemen menggunakan phial, dan menyebabkan ledakan phial ketika berdampak. Bilah Pengisi Daya hanya memiliki 5 botol (6 dengan keterampilan peningkatan kapasitas), jadi serangan eksplosif ini terbatas. Opsi ketiga juga tersedia, di mana alih-alih melepaskan botol di kapak, botol tersebut digunakan untuk mengisi daya perisai. Perisai yang terisi menyebabkan kerusakan phial saat Anda memblokir dan menusuknya, dan serangan pedang juga dapat menghasilkan bonus ledakan phial jika diisi. Jika seorang pemburu dapat membuat lebih banyak phial sebelum energi perisainya habis, mereka dapat melepaskan semua phial dalam ledakan besar saat dalam bentuk kapak.
+				</p>
+				<p class="w3-text-white">
+				Sword : Condensed Element Slash
+				</p>
+				<p class="w3-text-white">
+				Dengan merangkai Charge Phial menjadi Condensed Element Slash saat perisaimu terisi, pedangmu menjadi terisi dan serangannya juga akan mendapatkan keuntungan dari efek phial selama 40 detik.
+				</p>
+                <p class="w3-text-white">
+				Phial Effect
+				</p>
+				<p class="w3-text-white">
+				Serangan dengan charge blade tidak akan dibelokkan saat efek phialnya aktif, yang berguna saat menargetkan bagian tubuh yang keras.
+				</p>
+				<p class="w3-text-white">
+				Guard Point
+				</p>
+				<p class="w3-text-white">
+				Berbagai serangan memiliki periode di mana perisai berada di depan Anda yang akan memblokir serangan secara otomatis jika terkena, seperti awal Pedang: Morph Slash, atau akhir Pedang: Spinning Slash.
+				</p>
+				<p class="w3-text-white">
+				Savage Axe
+				</p>
+				<p class="w3-text-white">
+				Dengan phial yang disimpan, merangkai (Super) Amped Element Discharge ke Savage Axe Slash akan mengaktifkan mode Savage Axe hingga semua phial habis, menyebabkan semua serangan dalam bentuk kapak menghancurkan monster, dengan mengorbankan peningkatan kehilangan ketajaman.</p>
+				</p>
+			</div>
+            <script>
+                function openWeapon(namaWeapon) {
+                    var i;
+                    var x = document.getElementsByClassName("Weapon");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(namaWeapon).style.display = "block";
+                }
+            </script>
+    </body>
+</html>
